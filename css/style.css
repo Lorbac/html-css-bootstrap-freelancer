@@ -15,6 +15,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .ms_weight_700 {font-weight: 700;}
 
+.ms_w-80 {width: 80%;}
+
+.ms_padding200 {padding: 0 200px;}
+
 
 /* Fine common */
 
@@ -75,10 +79,14 @@ main {
     font-size: 40px;
 }
 
-#portfolio h2 {
+#portfolio {
+    padding-bottom: 50px;
+}
+
+#portfolio h2, #about h2, #contact h2 {
     font-size: 40px;
     font-weight: 700;
-    padding: 100px 0 0 10px;
+    padding: 100px 0 0 0;
 }
 
 .ms_box {
@@ -119,6 +127,41 @@ main {
     display: block;
 }
 
+#about {
+    width: 100%;
+    height: 400px;
+    background-color: #1ABC9C;
+    color: white;
+}
+
+#about h2, #contact h2 {
+    padding: 10px 0 0 0;
+}
+
+#jumbotron .line, #about .line {
+    background-color: white;
+}
+
+#about .btn {
+    color: white;
+    margin: 20px 0;
+}
+
+#contact {
+    width: 100%;
+    height: 500px;
+}
+
+#contact .btn {
+    background-color: #1ABC9C;
+    color: white;
+    margin: 20px 0 0 0;
+}
+
+#contact ::placeholder {
+    color: black;
+}
+
 /* Fine main  */
 
 /* Footer  */
@@ -148,8 +191,16 @@ footer {
         font-size: 40px;
     }
 
-    #portfolio h2 {
+    #portfolio h2, #about h2 {
         font-size: 30px;
+    }
+
+    #about {
+        height: 600px;
+    }
+
+    .ms_padding200 {
+        padding: 0 20px;
     }
 }
 
